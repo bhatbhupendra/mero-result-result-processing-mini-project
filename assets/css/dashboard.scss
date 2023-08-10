@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    .nav{
+        background: #007bff;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .logo{
+            padding: 8px 30px;
+            h4{
+                font-size: 20px;
+            }
+        }
+        .user_detail{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 8px 30px;
+            .email{
+                padding-right: 10px;
+                font-size: 15px;
+                .fa-regular{
+                    font-size: 18px;
+                    padding: 3px;
+                }
+            }
+            .logout{
+                padding-left: 10px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .dashboard-body-area{
+        display: flex;
+        flex-direction: row;
+        .link_section{
+            width: 15%;
+            background-color: rgb(240, 240, 240);
+            height: 100vh;
+            a{
+                display: block;
+                height: 40px;
+                color: black;
+                font-size: 15px;
+                font-weight: 500;
+                padding-left: 10px;
+                padding-top: 5px;
+                border-bottom: 1px solid rgb(143, 143, 143);
+                &:hover{
+                    color: white;
+                    background-color: rgb(98, 98, 98);
+                }
+                .fa-solid{
+                    font-size: 20px;
+                }
+                .fa-chevron-right{
+                    float: right;
+                    padding: 2px;
+                }
+            }     
+        }
+        .working-section{
+            width: 85%;
+            padding: 15px;
+            //this the only css for dashboard.php starts
+            .dashboard-wrapper{
+                background-color: #ebebeb;
+                border-radius: 10px;
+                .dashboard-title{
+                    background-color: white;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    border: 1px solid #e2e2e2;
+                }
+                .graphics{
+                    display: flex;
+                    justify-content: space-around;
+                    .graphics-count{
+                        border-radius: 5px;
+                        width: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        font-size: 12px;
+                        font-weight: 500;
+                        .count-student,.count-graduate{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            background-color: white;
+                            background-image: linear-gradient(to left, #1565c0 , #54abed);
+                            width: 100%;
+                            height: 48%;
+                            border-radius: 5px;
+                            color: white;
+                            padding: 20px 0;
+                            i{
+                                font-size: 40px;
+                            }
+                        }
+                        .count-student{ ///only margin to coutnt student
+                            margin-bottom: 7px;
+                            background-image: linear-gradient(to right, #1565c0 , #54abed);
+                        }
+                    }
+                    .graphics-graph{
+                        border-radius: 5px;
+                        background-color: white;
+                        width: 45%;
+                        
+                    }
+                    .graphics-pfratio{
+                        border-radius: 5px;
+                        background-color: white;
+                        width: 20%;
+                        .pf-toggle{
+                            padding: 10px 0;
+                            display: flex;
+                            justify-content: space-evenly;
+                            color: #1565c0;
+                            border-bottom: 2px solid #e1e8f0;
+                            i{
+                                cursor: pointer;
+                                background-color: red($color: #000000);
+                            }
+                        }
+                        
+                    }
+                    .graphics-notification{
+                        border-radius: 5px;
+                        background-color: white;
+                        width: 20%;
+                        padding: 10px;
+                        h5{
+                            border-bottom: 3px solid #e1e8f0;
+                        }
+                        .notification-body{
+                            font-size: 15px;
+                            height: 250px;
+                            overflow-y: scroll;
+                            // scroll-behavior: smooth;
+                            // scrollbar-width: thin;
+                            color:#6f6f6f;
+                            
+                            .notification-content{
+                               ol{
+                                text-decoration: none;
+                                list-style-type: none;
+                            }
+                            }
+                        }
+                        
+                    }
+                }
+                .search{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 55vh;
+                    .search-title{
+                        background-color: white;
+                        text-align: center;
+                        margin:10px 0;
+                        border: 1px solid #e2e2e2;
+                    }
+                    .search-form{
+                        form{
+                            display: flex;
+                            justify-content: space-evenly;
+                            .sByName,.sByRoll,.sByclass{
+                                width: 25%;
+                            }
+                            input{
+                                width: 100%;
+                                height: 30px;
+                                border: 1px solid #999999;
+                                border-radius: 4px;
+                                padding: 2px 5px;
+                            }
+                            .submit{
+                                width: 15%;
+                                input{
+                                    cursor: pointer;
+                                    border: none;
+                                    color: white;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    background-color: #e3b23c;
+                                }
+                            }
+                            .send-mail-all{
+                                background-color: #3E6D9C;
+                                border: 0;
+                                height: 40px;
+                                height: 33px;
+                                width: 230px;
+                                font-size: 15px;
+                                border-radius: 5px;
+                                color: white;
+                                display: inline-block;
+                                cursor: pointer;
+                                transition: all .8s;
+                                &:hover{
+                                    background-color: white;
+                                    color: #3E6D9C;
+                                    border: 1px solid #3E6D9C;
+                                }
+                                a{
+                                    color: inherit;
+                                }
+                            }
+                        }
+                    }
+                    .search-result{
+                        display: flex;
+                        justify-content: center;
+                        margin: 15px 0;
+                        table{
+                            background-color: white;
+                            width: 96%;
+                            border-radius: 5px;
+                            th{
+                                text-align: left;
+                            }
+                            th,td{
+                                padding: 8px;
+                            }
+                            tr:hover{
+                                background-color: #edf2f6;
+                            }
+                        }
+                        table,th,td{
+                            border-bottom: 1px solid #999999;
+                            border-collapse: collapse;
+                        }
+                    }
+                }
+            }
+
+            //this the only css for student.php starts
+            .student-wrapper{
+                background-color: #dfe4ea;
+                display: flex;
+                justify-content: center;
+                padding: 15px;
+                border-radius: 3px;
+                .form-wrapper{
+                    border-radius: 8px;
+                    background-color: white;
+                    color: #6a90ef;
+                    height: 230px;
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                    h4{margin: 5px;}
+                    form{
+                        height: 80%;
+                        width: 80%;
+                        select{
+                            border: 2px solid #6a90ef;
+                            border-radius: 5px;
+                        }
+                        .clickable-area{
+                            border: 2.5px dashed #6a90ef;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            height: 110px;
+                            margin-top: 10px;
+                            .fa-solid{
+                                font-size: 60px;
+                            }
+                        }
+                    }
+                    .student-upload-msg{
+                        font-weight: 800;
+                        margin-top: 10px;
+                        color: black;
+                    }
+                }
+            }
+            //this the only css for result.php starts
+            .result-wrapper{
+                background-color: #dfe4ea;
+                display: flex;
+                justify-content: center;
+                padding: 15px;
+                border-radius: 3px;
+                .form-wrapper{
+                    border-radius: 8px;
+                    background-color: white;
+                    color: #6a90ef;
+                    width: 345px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                    h4{margin: 5px;}
+                    form{   
+                        width: 80%;
+                        select{
+                            border: 2px solid #6a90ef;
+                            border-radius: 5px;
+                            width: 90px;
+                        }
+                        .clickable-area{
+                            border: 2.5px dashed #6a90ef;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            height: 110px;
+                            margin-top: 10px;
+                            .fa-solid{
+                                font-size: 60px;
+                            }
+                        }
+                    }
+                    .result-upload-msg{
+                        font-weight: 800;
+                        margin-top: 10px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//css for the error div in the dashboard
+
+
+@keyframes error-keyframe{
+    0%{
+        opacity: 0;
+        right: -100px;
+        bottom: 20px;
+    }
+    30%{
+        opacity: 1;
+        bottom: 20px;
+        right: 20px; 
+    }
+    90%{
+        opacity: 1;
+        bottom: 20px;
+        right: 20px; 
+    }
+    100%{
+        opacity: 0;
+        right: -100px;
+        bottom: 20px;
+    }
+}
+
+
+
+.error-txt{
+    position: fixed;
+    // bottom: 20px; ///handeled by keyframe above
+    // right: 20px; ///handeled by keyframe above
+    color: #721c24;
+    background: #f8d7da;
+    padding: 6px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    width: 22%;
+    animation: error-keyframe 4s;
+
+}
+
+.view-button{
+    background-color: #3E6D9C;
+    border: 0;
+    height: 40px;
+    height: 33px;
+    width: 90px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .8s;
+    &:hover{
+        background-color: white;
+        color: #3E6D9C;
+        border: 1px solid #3E6D9C;
+    }
+    a{
+        color: inherit;
+    }
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.marksheet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eeeeee;
+    .marksheet-container{
+        border: 1px black solid;
+        background-color: white;
+        .marksheet-title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 15px;
+            .marksheet-schoolLogo{
+                img{
+                    height: 100px;
+                    width: auto;
+                }
+            }
+            .marksheet-schoolName{
+                text-align: center;
+            }
+            .marksheet-softwareName{
+                img{
+                    height: 100px;
+                    width: auto;
+                }
+            }
+        }
+        .marksheet-info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px 40px;
+            .marksheet-infoLeft,.marksheet-infoRight{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .marksheet-result{
+            margin:10px 20px;
+            .marksheet-result-table{
+                width: 100%;
+                border: 1px black solid;
+                border-collapse: collapse;
+                
+                tr:nth-child(1){
+                    background-color:#666666;
+                    color: white;
+                }
+                tr:last-child{
+                    background-color:skyblue;
+                    font-weight: bold;
+                }
+                
+                tr,td,th{
+                    border: 1px black solid;
+                    text-align: center;
+                }
+                tr{
+                    height: 35px;
+                }
+                
+            }
+        }
+        .marksheet-per{
+            border: 1px black solid;
+            margin:10px 20px;
+            background-color: #fefedc;
+            
+            .marksheet-per-wrapper{
+                margin:1px 23px;
+                height: 35px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .marksheet-note{
+            margin:10px 25px;
+            align-items: center;
+            font-weight: bolder;
+        }
+    }
+
+}
+
+
+.marksheet-print{
+    background-color: #eeeeee;
+
+    .marksheet-print{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 15px;
+        padding-right: 26%;
+        .print-button{
+            background-color: green;
+            color: white;
+            border: 0;
+            height: 40px;
+            height: 33px;
+            width: 80px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    }
+}
+
+    

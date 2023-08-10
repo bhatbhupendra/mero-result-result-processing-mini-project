@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Press+Start+2P&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.search-form {
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.search-form .search-form-wrapper {
+  background-color: #e7e7e7;
+  border: 1.5px solid #cacaca;
+  border-radius: 3px;
+  padding: 30px;
+  width: 50%;
+  height: 28vh;
+}
+
+.search-form .search-form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.search-form .search-form-wrapper form .wrapper-terminal select {
+  width: 200px;
+  height: 25px;
+}
+
+.search-form .search-form-wrapper form .wrapper-class select {
+  width: 200px;
+  height: 25px;
+}
+
+.search-form .search-form-wrapper form .wrapper-reg_no input {
+  width: 200px;
+  height: 25px;
+}
+
+.search-form .search-form-wrapper form .wrapper-submit input {
+  width: 50px;
+  height: 25px;
+}
+
+.search-form .search-form-wrapper form span {
+  font-size: small;
+  font-style: italic;
+}
+
+.marksheet-print-seciton .marksheet-print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 15px;
+  padding-right: 46%;
+}
+
+.marksheet-print-seciton .marksheet-print .print-button {
+  background-color: green;
+  color: white;
+  border: 0;
+  height: 40px;
+  height: 33px;
+  width: 80px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes error-keyframe {
+  0% {
+    opacity: 0%;
+    right: -100px;
+    bottom: 20px;
+  }
+  50% {
+    opacity: 0.8;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@keyframes error-keyframe {
+  0% {
+    opacity: 0%;
+    right: -100px;
+    bottom: 20px;
+  }
+  50% {
+    opacity: 0.8;
+    bottom: 20px;
+  }
+  100% {
+    opacity: 1;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.error-txt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #721c24;
+  background: #f8d7da;
+  padding: 6px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #f5c6cb;
+  width: 18%;
+  -webkit-animation: error-keyframe .9s;
+          animation: error-keyframe .9s;
+}
+
+.nav {
+  background: #007bff;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .logo {
+  padding: 8px 30px;
+}
+
+.nav .logo h4 {
+  font-size: 20px;
+}
+
+.nav .user_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 8px 30px;
+}
+
+.nav .user_detail .email .fa-regular {
+  font-size: 18px;
+  padding: 3px;
+}
+
+.nav .user_detail .logout {
+  padding-left: 10px;
+}
+
+.nav .user_detail .logout a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=view-result.css.map */

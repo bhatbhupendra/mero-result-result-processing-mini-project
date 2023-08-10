@@ -1,0 +1,19 @@
+email system
+pass fail ratio bargraph
+
+profile
+the admin bitton 
+    back up database
+    goto result section
+    send result to parent
+    register a new user
+
+slider fix thin slider
+
+
+
+
+
+fail astrik
+search student ko
+action (date or by)

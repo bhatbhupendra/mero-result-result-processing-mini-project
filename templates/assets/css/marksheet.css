@@ -1,0 +1,170 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.marksheet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeeeee;
+}
+
+.marksheet .marksheet-container {
+  border: 1px black solid;
+  background-color: white;
+}
+
+.marksheet .marksheet-container .marksheet-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px;
+}
+
+.marksheet .marksheet-container .marksheet-title .marksheet-schoolLogo img {
+  height: 100px;
+  width: auto;
+}
+
+.marksheet .marksheet-container .marksheet-title .marksheet-schoolName {
+  text-align: center;
+}
+
+.marksheet .marksheet-container .marksheet-title .marksheet-softwareName img {
+  height: 100px;
+  width: auto;
+}
+
+.marksheet .marksheet-container .marksheet-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 40px;
+}
+
+.marksheet .marksheet-container .marksheet-info .marksheet-infoLeft, .marksheet .marksheet-container .marksheet-info .marksheet-infoRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.marksheet .marksheet-container .marksheet-result {
+  margin: 10px 20px;
+}
+
+.marksheet .marksheet-container .marksheet-result .marksheet-result-table {
+  width: 100%;
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+.marksheet .marksheet-container .marksheet-result .marksheet-result-table tr:nth-child(1) {
+  background-color: #666666;
+  color: white;
+}
+
+.marksheet .marksheet-container .marksheet-result .marksheet-result-table tr:last-child {
+  background-color: skyblue;
+  font-weight: bold;
+}
+
+.marksheet .marksheet-container .marksheet-result .marksheet-result-table tr, .marksheet .marksheet-container .marksheet-result .marksheet-result-table td, .marksheet .marksheet-container .marksheet-result .marksheet-result-table th {
+  border: 1px black solid;
+  text-align: center;
+}
+
+.marksheet .marksheet-container .marksheet-result .marksheet-result-table tr {
+  height: 35px;
+}
+
+.marksheet .marksheet-container .marksheet-per {
+  border: 1px black solid;
+  margin: 10px 20px;
+  background-color: #fefedc;
+}
+
+.marksheet .marksheet-container .marksheet-per .marksheet-per-wrapper {
+  margin: 1px 23px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marksheet .marksheet-container .marksheet-note {
+  margin: 10px 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+}
+
+.marksheet-print {
+  background-color: #eeeeee;
+}
+
+.marksheet-print .marksheet-print {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 15px;
+  padding-right: 26%;
+}
+
+.marksheet-print .marksheet-print .print-button {
+  background-color: green;
+  color: white;
+  border: 0;
+  height: 40px;
+  height: 33px;
+  width: 80px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=marksheet.css.map */
